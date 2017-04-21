@@ -1,0 +1,343 @@
+@CHARSET "utf-8";
+/*********************reset**************************/
+html,body {
+	width: 100%;
+	height: 100%;
+	font-size: 12px;
+	overflow: auto;
+	margin:0;
+	background-color: #F9EBAE;
+}
+
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,address,caption,cite,code,dfn,strong,var,td,button{
+	padding: 0;
+	margin: 0;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 100%;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+fieldset,img {
+	border: 0;
+}
+ol,ul {
+	list-style: none;
+}
+textarea {
+	border: 1px solid #d3cfc7;
+	overflow: auto;
+	background-color: white;
+	height: 5em;
+}
+
+textarea:FOCUS {
+	border-color: #F7C12C;
+}
+
+/*for space*/
+.ml,.ml1{
+	margin-left: 1em;
+}
+.ml2{
+	margin-left: 2em;
+}
+.ml3{
+	margin-left: 3em;
+}
+.mr,.mr1{
+	margin-right: 1em;
+}
+.mr2{
+	margin-right: 2em;
+}
+.mr3{
+	margin-right: 3em;
+}
+.mlr{
+	margin: 0 1em;
+}
+.mlr2{
+	margin: 0 2em;
+}
+/*for error message*/
+strong,.strong {
+	color: red;
+	font-weight: bold;
+	font-size: 120%;
+	font-style: normal;
+}
+
+a {
+	text-decoration: underline;
+	color: white;
+}
+
+a:hover {
+	text-decoration: none;
+}
+/*for buttons*/
+.btn,button {
+	border: 1px solid #b1a874;
+	color: #7f7f7f;
+	font-size: 100%;
+	cursor: pointer;
+	outline: none;
+	margin-top:-2px;
+	padding: 0px 2em;
+	line-height:2em;
+	text-decoration: none;
+	overflow:visible;
+	background-color: #F0F0F0;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-box-shadow: 0 0 2px #978f6c;
+	-webkit-box-shadow: 0 0 2px #978f6c;
+	
+}
+
+.btn:hover,button:HOVER {
+	color: #333;
+	border-color: #857b42;
+}
+
+input.text,input[type="text"],select {
+	border: 1px solid #d3cfc7;
+	background: #fff;
+	font-size: 100%;
+	width: 15em;
+	line-height:2em;
+	height:2em;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	text-indent: 5px;
+}
+
+input.text:FOCUS,input[type="text"]:FOCUS,select:FOCUS {
+	border-color: #F7C12C;
+	background: #ffe;
+}
+
+input.text:HOVER,input[type="text"]:HOVER,select:HOVER {
+	border-color: #E7C12C;
+	background: #ffd;
+}
+
+/*--------------------form-------------------------------*/
+/*for create/update form*/
+form.cu table {
+	width:100%;
+	background-color: #FEF5DE;
+	text-align: left;
+	vertical-align: middle;
+}
+
+form.cu table td {
+	padding: .5em;
+}
+form.cu table td.label {
+	width: 40%;
+	font-weight: bold;
+	text-align: right;
+}
+
+form.cu table tfoot td {
+	text-align: center;
+	vertical-align: middle;
+}
+
+/*for query form*/
+form.query table {
+	background-color: #FEF5DE;
+	text-align: left;
+	vertical-align: middle;
+}
+
+form.query table td {
+	padding: .5em;
+}
+form.query table td.label {
+	font-weight: bold;
+	text-align: right;
+}
+form.query table tfoot td {
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+/*************************table表格样式********************************************************/
+table.dataList {
+	width: 100%;
+	border-spacing: 0px;
+	border-collapse: collapse;
+	text-align: center;
+	background-color: #FBFCFC;
+}
+
+table.dataList thead tr {
+	background-color: #ffff99;
+	color: #818181;
+	height: 2em;
+	font-weight: bold;
+	font-size: 110%;
+	font-family: '黑体';
+}
+
+table.dataList td,table.dataList th {
+	white-space: nowrap;
+	border: 1px solid #E0E0E0;
+	padding: 2px;
+}
+
+table.dataList  a {
+	color: #BA4C32;
+	text-decoration: underline;
+}
+
+table.dataList tbody tr.odd {
+	background-color: #FFFAEE;
+}
+
+table.dataList tbody tr:HOVER {
+	background-color: #EFCA4B;
+}
+
+/*********************************common****************************/
+.clear:after {
+	clear: both;
+	content: "\200B";
+	display: block;
+	height: 0;
+}
+.clear {
+	*zoom:1;
+}
+
+.ibBox {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+
+table.vhc {
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+	text-align: center;
+}
+input.small {
+	width: 2em;
+	text-align: center;
+	text-indent: 0px;
+}
+/*---------------------common-layout--------------------------------------/
+/*页面导航区*/
+div.nav {
+	line-height: 2em;
+	color: #978B48;
+	border-bottom: 1px solid red;
+	padding-left: 2px;
+}
+
+div.nav a {
+	color: #978B48;
+}
+
+div.nav span {
+	margin: 0 3px;
+}
+
+.layoutv{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.layoutv > .head{
+	position: absolute;
+	color: #FFFFFF;
+	left: 0px;
+	right: 0px;
+}
+.layoutv > .body{
+	position: absolute;
+	color: #BA4C32;
+	left: 0px;
+	right: 0px;
+}
+.layoutv > .foot{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	color: #949494;
+}
+.layouth{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.layouth> .left{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+}
+.layouth >.right{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+.layouth> .middle{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+.floatBox{
+	width: 100%;
+	height: 100%;
+}
+.floatBox >.left{
+	float: left;
+}
+.floatBox >.right{
+	float: right;
+}
+
+
+#paginationBox{
+	display: block;
+	background-color: #ff99ee;
+	height: 100%;
+	width: 100%;
+}
+
+#paginationBox .total {
+	float: left;
+}
+
+#paginationBox .jumping {
+	float: right;
+}
+
+#paginationBox .jumping a {
+	border: solid 1px #d5d5d5;
+	text-decoration: none;
+	color: #949494;
+	padding: 5px 1em;
+}
+
+#paginationBox .jumping a.active:hover {
+	border-color: #8c3521;
+	background: #ba4c32;
+	color: #fff;
+}
+
+
+
+

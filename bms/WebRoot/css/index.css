@@ -1,0 +1,122 @@
+@CHARSET "utf-8";
+
+.layoutv .head{
+	background-color: #A9442C;
+	height: 5em;
+}
+
+.logoBox {
+	color: #FFFFFF;
+	font-family: Verdana, sans-serif;
+	top:5px;
+	left:1em;
+	position: absolute;
+}
+.logoBox h1{
+	font-size: 200%;
+}
+.logoBox h2{
+	font-size: 150%;
+	text-indent: 2em;
+}
+.quickLinks {
+	position:absolute;
+	bottom:5px;
+	right:20px;
+	font-size: 12px;
+	color: white;
+}
+/**导航区菜单样式*/
+.navMenu a{
+	color: white;
+}
+/**导航区菜单间距*/
+.navMenu span{
+	margin: 0 5px;
+}
+
+/**内容区定位*/
+.body {
+	position: absolute;
+	background-color: #F9EBAE;
+	width: 100%;
+	bottom: 0;
+	top: 80px;
+}
+/**菜单区定位*/
+.menu {
+	position: absolute;
+	width: 150px;
+	height: 100%;
+	left:0;
+	background-color: #EFCA4B;
+}
+/*菜单区整体样式*/
+.menu ul{
+	color: #887E42;
+	font-size: 13px;
+	border:0px solid black;
+	padding:0; 
+	text-align: left;
+}
+/**菜单默认样式*/
+.menu ul li{
+	background-color: #FFF3CA;
+	border-bottom: 1px solid #F3C598;
+	border-right: 1px solid #EFCA4B;
+	color: #907525;
+	cursor: pointer;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 25px;
+}
+/**鼠标经过菜单样式*/
+.menu ul li:HOVER{
+	color: red;
+	background-color: #F9EBAE;
+}
+/**菜单选中样式*/
+.menu ul li.selected{
+	border-right-color:#F9EBAE;
+	background-color: #F9EBAE;
+	border: 0px solid black;
+	border-bottom: 1px solid #F3C598;
+	
+	
+}
+/**菜单图标样式*/
+.menu li strong{
+	font-size: 20px;
+	color: #EFCA4B;
+}
+/**菜单选中图标样式*/
+li.selected strong{
+	color: red;
+	border: 0px solid black;
+}
+/**主显示区定位*/
+.container {
+	left: 150px;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	background-color:#F9EBAE;
+}
+/*frame区定位*/
+.frameBox{
+	left: 5px;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	bottom: 5px;
+	background-color:#F9EBAE;
+}
+
+/**frame样式**/
+#mainFrame{
+	border-style: none;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}

@@ -1,0 +1,62 @@
+@CHARSET "utf-8";
+.top {
+	background-color: #40454B;
+	height: 50%;
+	position: absolute;
+	width: 100%;
+}
+
+.bottom {
+	background-color: #666C78;
+	position: absolute;
+	top: 50%;
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
+}
+
+.enName {
+	font-size: 120px;
+	font-family: serif, cursive;
+	color: white;
+	font-weight: bolder;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	bottom: 50px;	
+}
+
+.cnName {
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	bottom: 10px;	
+}
+
+.a {
+	color: white;
+	font-size: 40px;
+	font-family: 华文彩云,宋体;
+	vertical-align: bottom;
+}
+
+.b {
+	font-size: 20px;
+	vertical-align: middle;
+}
+.c {
+	font-size: 40px;
+	color: #70B90A;
+	vertical-align: middle;
+}
+
+
+.copyright {
+	position: absolute;
+	bottom: 1em;
+	width: 100%;
+	left: 0;
+	text-align: center;
+	color: #8877D0;
+	font-size: 13px;
+}
